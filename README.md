@@ -31,7 +31,7 @@ cd TelefonNumarasiDogrulamaKayit
 Docker'ın yüklü olduğuna emin olun.
 
 ```bash
-docker compose --build -d
+docker compose up --build -d
 ```
 Uygulama şimdi `http://localhost:8080` adresinde çalışıyor olacaktır.
 ```
