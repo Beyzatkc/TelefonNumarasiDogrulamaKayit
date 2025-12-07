@@ -54,6 +54,7 @@ http://localhost:8080
 }
 ```
 **Örnek Yanıt:** 
+```json
 {
   "number": "054153",
   "rules": {
@@ -63,6 +64,7 @@ http://localhost:8080
   },
   "isValid": true
 }
+```
 
 ## 2. Kullanıcı Kaydı (Doğrulama + Veritabanı Kaydı)
 
@@ -80,7 +82,7 @@ http://localhost:8080
 ```
 
 **Örnek Başarılı Yanıt (201 Created):**
-
+```json
 {
   "status": "accepted",
   "message": "Telefon numarası geçerli, kayıt başarıyla oluşturuldu.",
@@ -93,7 +95,7 @@ http://localhost:8080
   },
   "valid": true
 }
-
+```
 ## 3. Geçerli Telefon Numarası Sayısı
 
 **Açıklama:** Kurallara uyan toplam farklı telefon numarası sayısını hesaplayıp döner.  
@@ -115,7 +117,7 @@ http://localhost:8080
 **Giriş Parametresi:** Yok
 
 **Örnek Yanıt:**
-
+```json
 [
   {
     "id": 1,
@@ -125,7 +127,7 @@ http://localhost:8080
     "date": "2025-12-07T17:20:59.556785"
   }
 ]
-
+```
 
 
 **İletişim:** [GitHub üzerinden mesaj atabilirsiniz](https://github.com/Beyzatkc)
