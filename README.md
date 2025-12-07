@@ -43,4 +43,91 @@ Tarayıcıdan aşağıdaki adrese giderek arayüzü kullanabilirsiniz:
 http://localhost:8080
 ```
 
+<<<<<<< HEAD
+
+## 1. Telefon Numarası Doğrulama
+**Açıklama:** Telefon numarasını matematiksel kurallara göre doğrular. Veritabanına kayıt yapmaz.  
+**HTTP Method:** `POST`  
+**URL:** `http://localhost:8080/api/phone/validate`  
+
+**Giriş Parametreleri (JSON):**  
+```json
+{
+  "number": "054153"
+}
+
+**Örnek Yanıt:** 
+{
+  "number": "054153",
+  "rules": {
+    "hasNonZeroDigit": true,
+    "sumFirstEqualsLast": true,
+    "sumOddEqualsEven": true
+  },
+  "isValid": true
+}
+
+## 2. Kullanıcı Kaydı (Doğrulama + Veritabanı Kaydı)
+
+**Açıklama:** Telefon numarasını doğrular; geçerliyse kullanıcıyı MySQL veritabanına kaydeder.  
+**HTTP Method:** `POST`  
+**URL:** `http://localhost:8080/api/registration`  
+
+**Giriş Parametreleri (JSON):**  
+```json
+{
+  "name": "Ali Veli",
+  "email": "ali@example.com",
+  "phoneNumber": "054153"
+}
+
+**Örnek Başarılı Yanıt (201 Created):**
+
+{
+  "status": "accepted",
+  "message": "Telefon numarası geçerli, kayıt başarıyla oluşturuldu.",
+  "userResponseDTO": {
+    "id": 1,
+    "name": "Ali Veli",
+    "email": "ali@example.com",
+    "phone": "054153",
+    "date": "2025-12-07T17:20:59.556784982"
+  },
+  "valid": true
+}
+
+## 3. Geçerli Telefon Numarası Sayısı
+
+**Açıklama:** Kurallara uyan toplam farklı telefon numarası sayısını hesaplayıp döner.  
+**HTTP Method:** `GET`  
+**URL:** `http://localhost:8080/api/phone/count`  
+
+**Giriş Parametresi:** Yok  
+
+**Örnek Yanıt:**  
+```json
+1
+
+## 4. Son Üç Kullanıcıyı Getir
+**Açıklama:** Sisteme son kayıt olan 3 kullanıcıyı sıralı şekilde döndürür.
+**HTTP Method:** GET
+**URL:** http://localhost:8080/api/last-three
+
+**Giriş Parametresi:** Yok
+
+**Örnek Yanıt:**
+
+[
+  {
+    "id": 1,
+    "name": "Ali Veli",
+    "email": "ali@example.com",
+    "phone": "054153",
+    "date": "2025-12-07T17:20:59.556785"
+  }
+]
+
+
+
 **İletişim:** [GitHub üzerinden mesaj atabilirsiniz](https://github.com/Beyzatkc)
+
