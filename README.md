@@ -18,7 +18,7 @@ TelefonNumarasiDogrulamaKayit, bir telefon numarasını doğrulama ve kayıt etm
 
 ## Kurulum
 
-### 1. Kaynak Kodun Edinilmesi
+## 1. Kaynak Kodun Edinilmesi
 
 Git ile projenin son sürümünü bilgisayarınıza klonlayınız:
 ```bash
@@ -26,7 +26,7 @@ git clone https://github.com/Beyzatkc/TelefonNumarasiDogrulamaKayit.git
 cd TelefonNumarasiDogrulamaKayit
 ```
 
-### 2. Projeyi Çalıştırmak (Docker ile)
+## 2. Projeyi Çalıştırmak (Docker ile)
 
 Docker'ın yüklü olduğuna emin olun.
 
@@ -36,7 +36,7 @@ docker compose up --build -d
 Uygulama şimdi `http://localhost:8080` adresinde çalışıyor olacaktır.
 ```
 
-### 4. Web Arayüzünü Kullanmak
+## 3. Web Arayüzünü Kullanmak
 
 Tarayıcıdan aşağıdaki adrese giderek arayüzü kullanabilirsiniz:
 ```
