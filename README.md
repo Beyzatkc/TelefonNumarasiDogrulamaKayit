@@ -34,7 +34,6 @@ Docker'ın yüklü olduğuna emin olun.
 docker compose up --build -d
 ```
 Uygulama şimdi `http://localhost:8080` adresinde çalışıyor olacaktır.
-```
 
 ## 3. Web Arayüzünü Kullanmak
 
@@ -64,7 +63,7 @@ http://localhost:8080
   },
   "isValid": true
 }
-
+```
 ## 2. Kullanıcı Kaydı (Doğrulama + Veritabanı Kaydı)
 
 **Açıklama:** Telefon numarasını doğrular; geçerliyse kullanıcıyı MySQL veritabanına kaydeder.  
@@ -78,6 +77,7 @@ http://localhost:8080
   "email": "ali@example.com",
   "phoneNumber": "054153"
 }
+```
 
 **Örnek Başarılı Yanıt (201 Created):**
 
@@ -106,6 +106,7 @@ http://localhost:8080
 ```json
 1
 
+```
 ## 4. Son Üç Kullanıcıyı Getir
 **Açıklama:** Sisteme son kayıt olan 3 kullanıcıyı sıralı şekilde döndürür.
 **HTTP Method:** GET
