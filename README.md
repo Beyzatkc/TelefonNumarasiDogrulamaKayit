@@ -63,7 +63,7 @@ http://localhost:8080
   },
   "isValid": true
 }
-```
+
 ## 2. Kullanıcı Kaydı (Doğrulama + Veritabanı Kaydı)
 
 **Açıklama:** Telefon numarasını doğrular; geçerliyse kullanıcıyı MySQL veritabanına kaydeder.  
