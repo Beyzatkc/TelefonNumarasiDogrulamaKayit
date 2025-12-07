@@ -43,8 +43,6 @@ Tarayıcıdan aşağıdaki adrese giderek arayüzü kullanabilirsiniz:
 http://localhost:8080
 ```
 
-<<<<<<< HEAD
-
 ## 1. Telefon Numarası Doğrulama
 **Açıklama:** Telefon numarasını matematiksel kurallara göre doğrular. Veritabanına kayıt yapmaz.  
 **HTTP Method:** `POST`  
